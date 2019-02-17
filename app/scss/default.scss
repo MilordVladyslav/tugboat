@@ -1,0 +1,27 @@
+.wrapper {
+  width: 80%;
+  max-width: 1200px;
+  min-width: 560px;
+  margin: auto;
+}
+
+
+body {
+  font-family: "Lucdia Grande";
+  &:before {
+    content: '';
+    background-image: url('../img/laminat.jpg');
+    background-repeat: repeat;
+    display: block;
+    position: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+  }
+}
+
+.left-content {
+  width: 75%;
+}
