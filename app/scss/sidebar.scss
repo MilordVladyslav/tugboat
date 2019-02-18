@@ -1,0 +1,71 @@
+.sidebar {
+  width: 23%;
+  float: right;
+  //background: $dirty-sand;
+
+  .drink-menu {
+    padding:  20px 15px;
+    background: $dirty-sand;
+    border-radius: 10px;
+    a {
+      color: $article-link;
+      text-decoration: none;
+      width: 100%;
+      display: inline-block;
+      padding: 10px 0;
+      font-weight: bold;
+      border-bottom: 2px solid $middle-brown;
+      background: none;
+      transition: background .2s;
+      &:hover {
+        background:rgba(0,0,0,0.1);
+        transition: background .2s;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+      .price {
+        font-weight: normal;
+        color: $dark-brown;
+        float: right;
+      }
+    }
+  }
+
+  .drink-menu-title {
+    color: $red-title;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px solid $middle-brown;
+    padding-bottom: 7px;
+  }
+
+  .press {
+    margin-top: 40px;
+    padding:  20px 15px;
+    .press-title {
+      color: $red-title;
+      text-transform: uppercase;
+      font-weight: bold;
+      border-bottom: 2px solid $middle-brown;
+      padding-bottom: 5px;
+      letter-spacing: 2px;
+    }
+    .press-review {
+      padding:20px 0;
+      color: $light-brown;
+      font-style: italic;
+      border-bottom: 1px solid $middle-brown;
+    }
+
+    .author {
+      font-size: 14px;
+      margin-top: 15px;
+      text-align: right;
+    }
+
+  }
+
+
+}

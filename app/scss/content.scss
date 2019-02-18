@@ -10,8 +10,12 @@
     border: 15px solid $dirty-sand;
     border-radius: 6px;
     color: $dark-brown;
-
   }
+
+  .left-content {
+    float: left;
+  }
+
   .find-button {
     background: url("../img/cup.png");
     width: 59px;
@@ -67,8 +71,72 @@
       }
     }
     .weekly-img-link:nth-child(3) {
-      margin-left: 4.4%;
-      margin-right: 4.4%;
+      margin-left: 4.1%;
+      margin-right: 4.1%;
     }
   }
+
+  .topics {
+    margin-top: 32px;
+    .title {
+      font-family: "Noto Sans Georgian";
+      font-size: 22px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid $light-brown;
+    }
+  }
+
+  .article-block {
+    display: flex;
+    border-bottom: 1px solid $dirty-sand;
+  }
+
+  .article-left {
+    padding-top: 0px;
+    width: 30%;
+  }
+
+  .article-title {
+    color: $red-title;
+    font-size: 28px;
+    font-family: 'Noto Sans Georgian';
+    margin-bottom: 22px;
+    margin-top: 22px;
+  }
+
+  .date, .date-time, .author {
+    line-height: 1.4;
+  }
+
+  .author span {
+    font-style: italic;
+  }
+
+  .article-right {
+    width: 65%;
+    padding:  0px 60px;
+    line-height: 1.4;
+
+    p {
+      margin-bottom: 30px;
+    }
+    a {
+      color: $article-link;
+      text-decoration: none;
+    }
+  }
+
+  .archive {
+    margin-top:  40px;
+    margin-bottom: 40px;
+    margin-left: 34%;
+    color: $dirty-sand;
+    background: $article-link;
+    padding: 5px 10px;
+    font-weight: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
 }

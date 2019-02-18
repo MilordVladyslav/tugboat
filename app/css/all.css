@@ -25,6 +25,11 @@ body {
 .left-content {
   width: 75%; }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
 .header {
   width: 100%;
   height: 180px;
@@ -222,6 +227,8 @@ body {
     -webkit-border-radius: 6px;
             border-radius: 6px;
     color: #766557; }
+  .content .left-content {
+    float: left; }
   .content .find-button {
     background: url("../img/cup.png");
     width: 59px;
@@ -270,5 +277,114 @@ body {
     .content .weekly-specials .weekly-img-link .weekly-price {
       color: #b2a18f; }
   .content .weekly-specials .weekly-img-link:nth-child(3) {
-    margin-left: 4.4%;
-    margin-right: 4.4%; }
+    margin-left: 4.1%;
+    margin-right: 4.1%; }
+  .content .topics {
+    margin-top: 32px; }
+    .content .topics .title {
+      font-family: "Noto Sans Georgian";
+      font-size: 22px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #F3F2E8; }
+  .content .article-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #E2E1D4; }
+  .content .article-left {
+    padding-top: 0px;
+    width: 30%; }
+  .content .article-title {
+    color: #D32B42;
+    font-size: 28px;
+    font-family: 'Noto Sans Georgian';
+    margin-bottom: 22px;
+    margin-top: 22px; }
+  .content .date, .content .date-time, .content .author {
+    line-height: 1.4; }
+  .content .author span {
+    font-style: italic; }
+  .content .article-right {
+    width: 65%;
+    padding: 0px 60px;
+    line-height: 1.4; }
+    .content .article-right p {
+      margin-bottom: 30px; }
+    .content .article-right a {
+      color: #3B90AF;
+      text-decoration: none; }
+  .content .archive {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 34%;
+    color: #E2E1D4;
+    background: #3B90AF;
+    padding: 5px 10px;
+    font-weight: 16px;
+    border: none;
+    -webkit-border-radius: 6px;
+            border-radius: 6px;
+    cursor: pointer; }
+
+.sidebar {
+  width: 23%;
+  float: right; }
+  .sidebar .drink-menu {
+    padding: 20px 15px;
+    background: #E2E1D4;
+    -webkit-border-radius: 10px;
+            border-radius: 10px; }
+    .sidebar .drink-menu a {
+      color: #3B90AF;
+      text-decoration: none;
+      width: 100%;
+      display: inline-block;
+      padding: 10px 0;
+      font-weight: bold;
+      border-bottom: 2px solid #b2a18f;
+      background: none;
+      -webkit-transition: background .2s;
+      -o-transition: background .2s;
+      transition: background .2s; }
+      .sidebar .drink-menu a:hover {
+        background: rgba(0, 0, 0, 0.1);
+        -webkit-transition: background .2s;
+        -o-transition: background .2s;
+        transition: background .2s; }
+      .sidebar .drink-menu a:last-child {
+        border-bottom: none; }
+      .sidebar .drink-menu a .price {
+        font-weight: normal;
+        color: #766557;
+        float: right; }
+  .sidebar .drink-menu-title {
+    color: #D32B42;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #b2a18f;
+    padding-bottom: 7px; }
+  .sidebar .press {
+    margin-top: 40px;
+    padding: 20px 15px; }
+    .sidebar .press .press-title {
+      color: #D32B42;
+      text-transform: uppercase;
+      font-weight: bold;
+      border-bottom: 2px solid #b2a18f;
+      padding-bottom: 5px;
+      letter-spacing: 2px; }
+    .sidebar .press .press-review {
+      padding: 20px 0;
+      color: #F3F2E8;
+      font-style: italic;
+      border-bottom: 1px solid #b2a18f; }
+    .sidebar .press .author {
+      font-size: 14px;
+      margin-top: 15px;
+      text-align: right; }
+
+.footer {
+  padding-bottom: 50px;
+  color: #E2E1D4; }

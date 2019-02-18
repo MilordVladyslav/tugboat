@@ -25,3 +25,9 @@ body {
 .left-content {
   width: 75%;
 }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
